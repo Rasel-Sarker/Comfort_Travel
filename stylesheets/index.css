@@ -52,7 +52,7 @@ header nav {
    justify-content: space-between;
    flex-wrap: wrap;
    gap: 2rem;
-   padding: 6.8vh 1vw;
+   /* padding: 6.8vh 1vw; */
 }
 /* nav logo section css */
 .nav_logo {
