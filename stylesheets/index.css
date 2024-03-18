@@ -1,0 +1,82 @@
+/* primary_color:#FF5400; - light yellow */
+/* secondary_color: #5A5A5D; - black gray */
+/* title_color:#131318; - like black */
+/* pc = primary color */
+/* sc = secondary color */
+/* tc = title color */
+/* tfw = title font weight */
+
+/* google fonts css import link */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+/* universal css */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+/* font family selection include body tag */
+body {
+   font-family: Mulish;
+   background: #fff;
+}
+/* common css predefined */
+ul li {
+   list-style: none;
+}
+a {
+   text-decoration: none;
+}
+/* common color css class predefined */
+.pc {
+   color: #ff5400;
+}
+.sc {
+   color: #5a5a5d;
+}
+.tc {
+   color: #131318;
+}
+/* common font weight class predefined */
+.tfw {
+   font-weight: 800;
+}
+/* header section css */
+header {
+   max-width: 1170px;
+   margin: 0 auto;
+}
+/* nav section css */
+header nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 2rem;
+   padding: 6.8vh 1vw;
+}
+/* nav logo section css */
+.nav_logo {
+   display: flex;
+   align-items: center;
+}
+.nav_logo img {
+   width: 48px;
+   height: 56px;
+}
+.nav_logo h2 {
+   font-size: 2.4rem;
+}
+/* nav navigation item css */
+.nav_navigation_item ul {
+   display: flex;
+   gap: 40px;
+}
+.nav_navigation_item ul li {
+   font-size: 1.2rem;
+}
+/* header banner section css */
+header .banner {
+   background: url(../images/header_banner.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
