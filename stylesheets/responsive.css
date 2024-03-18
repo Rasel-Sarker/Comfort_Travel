@@ -33,4 +33,20 @@
       justify-content: center;
       gap: 20px;
    }
+   /* popular tour section css */
+   .popular_tour {
+      flex-direction: column;
+      gap: 2vw;
+      margin: 30px 0;
+   }
+   .popular_tour_text,
+   .popular_tour_image {
+      width: 100%;
+   }
+   .popular_tour_text h1 {
+      font-size: 1.5rem;
+   }
+   .popular_tour_text button {
+      margin-bottom: 20px;
+   }
 }
