@@ -1,0 +1,36 @@
+@media screen and (max-width: 600px) {
+   body {
+      padding: 0 20px;
+   }
+   /* header nav css */
+   header nav {
+      flex-wrap: nowrap;
+   }
+   .nav_logo img {
+      width: 25px;
+      height: 25px;
+   }
+   .nav_logo h2 {
+      font-size: 1rem;
+   }
+   .nav_navigation_item ul {
+      display: none;
+   }
+   .nav_navigation_item i {
+      display: block;
+      font-size: 20px;
+   }
+   /* banner section css */
+   .banner h1 {
+      font-size: 1.4rem;
+   }
+   .banner_travel_info_container {
+      flex-direction: column;
+      padding: 0 10px;
+   }
+   .banner_travel_info {
+      width: 100%;
+      justify-content: center;
+      gap: 20px;
+   }
+}
