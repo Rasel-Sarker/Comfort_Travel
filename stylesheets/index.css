@@ -45,22 +45,46 @@ a {
 .pfw {
    font-weight: 400;
 }
+.fs-16 {
+   font-size: 1rem;
+}
+.fs-20 {
+   font-size: 20px;
+}
+.fs-24 {
+   font-size: 1.5rem;
+}
+.fs-30 {
+   font-size: 30px;
+}
+.mt-48 {
+   margin-top: 48px;
+}
 .mb-24 {
    margin-bottom: 1.5rem;
+}
+.pm {
+   margin: 20px 0 40px 0;
+}
+.fs-40 {
+   font-size: 2.5rem;
 }
 .fs-16 {
    font-size: 1rem;
 }
+.t-center {
+   text-align: center;
+}
 /* common button style */
 .common_btn {
-   background: #ff5400;
    color: #fff;
-   padding: 10px 20px;
    border: 0;
    outline: 0;
-   border-radius: 5px;
    font-weight: 600;
    font-size: 1rem;
+   padding: 14px 25px;
+   border-radius: 8px;
+   background: #ff5400;
 }
 /* header section css */
 header,
@@ -191,6 +215,7 @@ header .banner::before {
    display: flex;
    gap: 2vw;
    margin: 100px 0;
+   min-height: min-content;
 }
 .popular_tour_text {
    width: 50%;
@@ -218,4 +243,312 @@ li {
 .popular_tour_image img {
    width: 100%;
    height: 100%;
+}
+/* destination section css */
+.destination {
+   text-align: center;
+}
+.destination p {
+   margin: 24px 0 40px 0;
+}
+.destination_grid_item_container .grid_item {
+   position: relative;
+   z-index: 1;
+}
+.destination_grid_item_container .grid_item::before {
+   content: " ";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.5);
+   z-index: 2;
+   display: none;
+}
+.destination_grid_item_container .grid_item:hover::before {
+   display: block;
+   transition: 0.6s all;
+}
+.destination_grid_item_container .grid_item::after {
+   content: "Bangladesh";
+   text-align: center;
+   position: absolute;
+   top: 50%;
+   right: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 4;
+   color: #fff;
+   font-size: 1.5rem;
+   display: none;
+}
+.destination_grid_item_container .grid_item:hover::after {
+   display: block;
+   transition: 0.6s all;
+}
+.maldeves {
+   grid-area: maldeves;
+}
+.srilanka {
+   grid-area: srilanka;
+}
+.indonesia {
+   grid-area: indonesia;
+}
+.north_america {
+   grid-area: north_america;
+}
+.kashmir {
+   grid-area: kashmir;
+}
+.bangladesh {
+   grid-area: bangladesh;
+}
+.bandhorban {
+   grid-area: bandhorban;
+}
+.destination_grid_item_container {
+   display: grid;
+   grid-template-columns: repeat(10, 1fr);
+   gap: 10px;
+   grid-template-areas:
+      "maldeves maldeves maldeves maldeves maldeves indonesia indonesia indonesia indonesia indonesia"
+      "srilanka srilanka srilanka north_america north_america north_america north_america north_america kashmir kashmir"
+      "bangladesh bangladesh bangladesh bangladesh bandhorban bandhorban bandhorban bandhorban bandhorban bandhorban";
+}
+.destination_grid_item_container img {
+   width: 100%;
+   height: 250px;
+}
+/* why choose us section */
+.choose_us {
+   margin-top: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 20px;
+   flex-wrap: wrap;
+}
+.choose_us > h1,
+.choose_us > p {
+   text-align: center;
+}
+.choose_us p {
+   margin-top: 1rem;
+}
+.choose_us_card_container {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   /* grid-template-areas: 
+   "hotel " */
+}
+.choose_us_card {
+   padding: 2.73vw 4.7vw 2.73vw 2.73vw;
+   max-width: 573px;
+   border-radius: 16px;
+   border: 1px solid rgba(251, 181, 99, 0.2);
+}
+.choose_us_card h2 {
+   margin-top: 32px;
+   font-size: 1.5rem;
+}
+.choose_us_card_container > .choose_us_card:nth-child(2n + 1) {
+   background: rgba(251, 181, 99, 0.05);
+}
+.price /* price is part of choose_us_card */ {
+   background: rgba(41, 206, 246, 0.05);
+}
+/* deal_ discount section css  */
+.deal_discount {
+   margin-top: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.deal_discount_info_container {
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   width: 100%;
+   height: 500px;
+}
+.deal_discount_first_container {
+   background: url(../images/deal_discount_first.png) no-repeat center center;
+}
+.deal_discount_second_container {
+   background: url(../images/deal_discount_second.png) no-repeat center center;
+   margin: 24px 0;
+   justify-content: start;
+}
+.deal_discount_third_container {
+   background: url(../images/deal_discount_first.png) no-repeat center center;
+}
+.deal_discount_info {
+   border-radius: 16px;
+   border: 2px solid #fff;
+   max-width: 580px;
+   max-height: 390px;
+   padding: 55px;
+   background-color: #ffffffc7;
+   margin-right: 56px;
+}
+.deal_discount_second_container .deal_discount_info {
+   margin-left: 56px;
+}
+.deal_discount_info_stat {
+   display: flex;
+   justify-content: space-between;
+   gap: 24px;
+}
+.deal_discount_time,
+.deal_discount_member,
+.deal_discount_country {
+   display: flex;
+   justify-content: space-between;
+   gap: 5px;
+}
+.deal_discount_text {
+}
+.deal_discount_text h2 {
+   margin: 4px 0;
+}
+.deal_discount_text p {
+}
+.deal_discount_text .deal_discount_price {
+   margin: 16px 0;
+}
+/* perfect place section css */
+.perfect_place {
+   width: 100%;
+   display: flex;
+   gap: 2vw;
+   margin: 100px 0;
+   min-height: min-content;
+}
+.perfect_place_text {
+   width: 50%;
+}
+.perfect_place_text h1 {
+   font-size: 2.5rem;
+}
+.perfect_place_text p,
+li {
+   font-size: 1rem;
+   margin-bottom: 1.5rem;
+   font-weight: 400;
+   color: #5a5a5d;
+}
+.perfect_place_text ul {
+   margin-left: 35px;
+}
+.perfect_place_text ul li {
+   list-style-type: disc;
+}
+.perfect_place_video {
+   width: calc(100% - 50% - 2vw);
+   max-height: 100%;
+}
+.perfect_place_video video {
+   width: 100%;
+   height: 100%;
+}
+/* newsletter section css */
+.newsletter {
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+   max-height: min-content;
+   margin-bottom: 100px;
+}
+.newsletter_text {
+   width: 40%;
+   border-radius: 16px;
+   border: 1px solid #ff5400;
+   padding: 40px;
+}
+.newsletter_text h2 {
+   margin-bottom: 15px;
+}
+.newsletter_text .newsletter_name {
+   margin: 50px 0 25px 0;
+}
+.newsletter_text .newsletter_email {
+   margin: 0 0 25px 0;
+}
+.newsletter_text .newsletter_btn {
+   width: 100%;
+}
+.newsletter_image {
+   width: calc(100% - 40% - 20px);
+   border-radius: 10px;
+   overflow: hidden;
+   position: relative;
+   /* height: 340px; */
+}
+.newsletter_image img {
+   width: 100%;
+   height: 100%;
+}
+.newsletter_text input {
+   width: 100%;
+   outline: 0;
+   border: 0;
+   border-radius: 8px;
+   background: rgba(19, 19, 24, 0.05);
+   padding: 15px;
+}
+/* newsletter save up css */
+.newsletter_save {
+   border-radius: 16px;
+   background: #ff5400;
+   display: inline-block;
+   padding: 20px;
+   position: absolute;
+   bottom: 45px;
+   right: 12px;
+   transform: rotate(-18deg);
+}
+.newsletter_save a {
+   font-size: 30px;
+   color: #fff;
+}
+.newsletter_save p {
+   font-size: 30px;
+   font-weight: 800;
+   color: #fff;
+}
+/* footer css */
+footer {
+   padding: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: rgba(19, 19, 24, 0.05);
+}
+.footer_title {
+   font-size: 24px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+.media {
+   margin: 25px 0 100px 0;
+   display: flex;
+   gap: 15px;
+   justify-content: center;
+}
+.media i {
+   font-size: 24px;
+}
+.media .copy_right {
+   text-align: justify;
 }
