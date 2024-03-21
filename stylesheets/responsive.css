@@ -92,7 +92,7 @@
       align-items: end;
    }
    .deal_discount_second_container .deal_discount_info {
-      margin: 0 16px;
+      margin: 16px 16px;
    }
    .deal_discount_info_stat {
       display: flex;
